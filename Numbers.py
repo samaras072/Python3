@@ -1,6 +1,6 @@
 import os
 
-a = input("Qalan reqemi daxil et:")
+a = input("")
 s = []
 
 os.system('cls')
@@ -17,7 +17,7 @@ def summary(s):
     for z in range(len(s)):
         b += s[z]
     if b % 9 == 0:
-        print('Siz secdiyiviz reqem ya 0-di yadaki 9-dur')
+        print('0 or 9')
     elif b % 9 != 0:
         while b % 9 != 0:
             b+=1
