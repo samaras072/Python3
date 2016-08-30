@@ -1,21 +1,29 @@
-a = []
-b = int(input('Количество цифр в ответе:'))
+import os
+
+a = input("Qalan reqemi daxil et:")
+s = []
+
+os.system('cls')
 
 def append():
-    print('Например если ответ 421, то вводим цифры по одной 4 потом 2 потом 1')
-    for i in range(b):
-        a.append(int(input('Ваши цифры в ответе, запишите по одному:')))
-    summary(a)
+    for i in range(len(a)):
+        a.split()
+        s.append(int(a[i]))
+    summary(s)
 
-def summary(a):
+def summary(s):
     b = 0
     k = 0
-    for z in a:
-        b += z
-    while b % 9 != 0:
-        b+=1
-        k+=1
-    print(k)
+    for z in range(len(s)):
+        b += s[z]
+    if b % 9 == 0:
+        print('Siz secdiyiviz reqem ya 0-di yadaki 9-dur')
+    elif b % 9 != 0:
+        while b % 9 != 0:
+            b+=1
+            k+=1
+        print(k)
 
+    os.system('pause')
 
 append()
